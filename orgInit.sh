@@ -1,4 +1,4 @@
-sfdx shane:org:create -f config/project-scratch-def.json -d 1 -s -o creator.demo --userprefix object 
-sfdx force:source:push
-sfdx shane:user:password:set -g User -l User -p sfdx12345
-sfdx force:org:open
+sf demoutil org create scratch -f config/project-scratch-def.json -d 5 -s -p object -e creator.demo
+sf project deploy start
+sf demoutil user password set -p salesforce1 -g User -l User
+sf org open
